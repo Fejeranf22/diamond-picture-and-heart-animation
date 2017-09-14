@@ -78,6 +78,12 @@ h1 {
   border-radius: 47%;
 }
 
+.heart-h1 {
+  float: right;
+  margin-right: 0;
+  margin-left: 300px;
+}
+
 .heart {
   height: 0;
   width: 0;
@@ -90,12 +96,12 @@ h1 {
 .cir {
   height: 180px;
   width: 100px;
-  position: absolute;
+  position:fixed;
   top: 40%;
   left: 35%;
   background-color: red;
   transition: 1s;
-  transform-origin: right bottom;
+  transform-origin: left bottom;
 }
 
 .cir:before {
@@ -103,18 +109,23 @@ h1 {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: blue;
+  background-color: red;
   transition: 2s;
   transform-origin: right bottom;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+
 }
 
 .cir:hover {
-  transform: rotate(45deg) ;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  transform: rotate(-45deg) ;
 }
 
 
 .cir:hover:before {
-  transform: rotate(450deg)translateY(200px);
+  transform: rotate(450deg)translateY(100px);
 }
 
 
