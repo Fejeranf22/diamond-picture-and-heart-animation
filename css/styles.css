@@ -1,0 +1,128 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid blue;
+  background-color: #64615e;
+  height: 50vh;
+  width: 50vw;
+  padding-bottom: 50px;
+  margin-left: 25%;
+  margin-bottom: 10px;
+
+}
+
+h1 {
+  box-shadow: 0 0 20px 0 rgba(0, 0,0, 0.3);
+  color: white;
+  background-color:transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-size: 20px;
+  padding:15px;
+}
+
+
+.top-tris {
+  background-color: transparent;
+  display: flex;
+}
+
+.bttm-tris {
+  display: flex;  }
+
+.tri-1 {
+  height: 0;
+  width: 0;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid #64b5f6;
+  border-left: 25px  solid transparent;
+}
+
+.tri-2 {
+  margin-left: -25px;
+  height: 0;
+  width: 0;
+  border-right: 25px solid transparent;
+  border-top: 50px solid #2196f3;
+  border-left: 25px  solid transparent;
+}
+
+.tri-3 {
+  margin-left: -25px;
+  height: 0;
+  width: 0;
+  border-top: 0px  solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid #64b5f6;
+  border-left: 25px  solid transparent;
+}
+
+.tri-4 {
+  height: 0;
+  width: 0;
+  border-bottom: 0px  solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid #0d47a1;
+  border-left: 50px  solid transparent;
+}
+/*the heart */
+.box-2{
+  display: inline-flex;
+  border-radius: 47%;
+}
+
+.heart {
+  height: 0;
+  width: 0;
+  border-top: 70px solid red;
+  border-right: 70px solid transparent;
+  border-left: 70px solid transparent;
+  tranform:rotate(45%);
+}
+
+.cir {
+  height: 180px;
+  width: 100px;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  background-color: red;
+  transition: 1s;
+  transform-origin: right bottom;
+}
+
+.cir:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+  transition: 2s;
+  transform-origin: right bottom;
+}
+
+.cir:hover {
+  transform: rotate(45deg) ;
+}
+
+
+.cir:hover:before {
+  transform: rotate(450deg)translateY(200px);
+}
+
+
+/*border-top-right-radius: 45%;
+border-top-left-radius: 45%;
+}*/
+
+/*.top-cirs {
+  background-color: transparent;
+  display: flex;
+}*/
